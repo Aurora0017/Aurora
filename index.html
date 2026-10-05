@@ -345,11 +345,11 @@ footer{border-top:1px solid rgba(53,66,110,.35);padding:44px 0 60px;color:var(--
           <div><div class="k">支持系统</div><div class="v">Win10 <small>1809+</small></div></div>
           <div><div class="k">更新日期</div><div class="v">10-05</div></div>
         </div>
-        <a class="btn btn-primary" href="#" id="dlBtn" role="button">
+        <a class="btn btn-primary" href="https://github.com/Aurora0017/Aurora/releases/download/v1.2.64/AuroraRec.exe" id="dlBtn" role="button">
           <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3v12m0 0l-5-5m5 5l5-5"/><path d="M4 19h16"/></svg>
           下载 AuroraRec.exe
         </a>
-        <p class="dl-note" style="margin-top:14px">预览版下载按钮为演示占位，正式发布后接入 GitHub Releases 链接。<br>国内网络下载 GitHub 文件可能较慢，后续可增加国内镜像节点。</p>
+        <p class="dl-note" style="margin-top:14px">点击按钮从 GitHub Releases 直接下载 v1.2.64。<br>国内网络下载 GitHub 文件可能较慢，后续可增加国内镜像节点。</p>
       </div>
       <div class="dl-right">
         <div class="dl-stat">
@@ -398,7 +398,7 @@ footer{border-top:1px solid rgba(53,66,110,.35);padding:44px 0 60px;color:var(--
       <div class="t-body"><h3><span class="v">v1.2.9</span> 区域框选重写 · 窗口缩略动画</h3>
         <p>区域选择重写为画布直绘（支持多显示器、框选更跟手）；录制结束窗口缩略进悬浮球的过渡动画。</p></div>
     </div>
-    <div class="reveal" style="margin-top:10px"><a class="tl-more" href="#" id="logLink">查看完整版本历史 →</a></div>
+    <div class="reveal" style="margin-top:10px"><a class="tl-more" href="https://github.com/Aurora0017/Aurora/releases" id="logLink">查看完整版本历史 →</a></div>
   </div>
 </section>
 
@@ -617,15 +617,7 @@ footer{border-top:1px solid rgba(53,66,110,.35);padding:44px 0 60px;color:var(--
     }, 2600);
   }
 
-  /* ===== 下载按钮（预览占位）===== */
-  document.getElementById("dlBtn").addEventListener("click", function(e){
-    e.preventDefault();
-    showToast("预览版：正式发布后接入 GitHub Releases 下载链接");
-  });
-  document.getElementById("logLink").addEventListener("click", function(e){
-    e.preventDefault();
-    showToast("完整日志将随 GitHub 仓库一同发布");
-  });
+  /* ===== 下载按钮 / 完整日志（已接入 GitHub Releases 真实链接，放行默认跳转）===== */
 
   /* ===== 滚动揭示 ===== */
   var reveals = document.querySelectorAll(".reveal");
